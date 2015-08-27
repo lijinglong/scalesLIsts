@@ -7,7 +7,7 @@
 //
 
 #import "SaleListViewController.h"
-
+#import "userConfig.h"
 @interface SaleListViewController ()
 
 @end
@@ -18,6 +18,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         [self customTabbarItem:kTabbarItemModeOrder];
+        self.title = mainItem_saleList;
     }
     return self;
 }

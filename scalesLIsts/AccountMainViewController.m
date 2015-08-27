@@ -18,6 +18,7 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         [self customTabbarItem:kTabbarItemModeAccount];
+        self.title = mainItem_account;
     }
     return self;
 }
