@@ -26,7 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    [self customTabbarItem:kTabbarItemModeOrder];
+
     // Do any additional setup after loading the view from its nib.
 }
 

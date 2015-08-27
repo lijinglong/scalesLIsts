@@ -32,10 +32,10 @@
             [self customtabbarItems:mainItem_main normalImg:@"icon_nav_chat" lightImg:@"icon_nav_chat_selected"];
             break;
         case kTabbarItemModeOrder:
-            [self customtabbarItems:mainItem_saleList normalImg:nil lightImg:nil];
+            [self customtabbarItems:mainItem_saleList normalImg:@"icon_nav_chat" lightImg:@"icon_nav_chat_selected"];
             break;
         case kTabbarItemModeAccount:
-            [self customtabbarItems:mainItem_account normalImg:nil lightImg:nil];
+            [self customtabbarItems:mainItem_account normalImg:@"icon_nav_chat" lightImg:@"icon_nav_chat_selected"];
             break;
         default:
             break;

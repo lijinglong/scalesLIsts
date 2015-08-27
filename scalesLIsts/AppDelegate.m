@@ -12,6 +12,10 @@
 #import "MainNavigationViewController.h"
 #import "AcountNavigationViewController.h"
 #import "SaleListNavViewController.h"
+
+#import "SaleListViewController.h"
+#import "MainListViewController.h"
+#import "AccountMainViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -24,13 +28,17 @@
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
     
+    SaleListViewController *saleVC = [[SaleListViewController alloc] initWithNibName:@"SaleListViewController" bundle:nil];
+    AccountMainViewController *accountVC = [[AccountMainViewController alloc] initWithNibName:@"AccountMainViewController" bundle:nil];
+    MainListViewController *mainVC = [[MainListViewController alloc] initWithNibName:@"MainListViewController" bundle:nil];
     TabbarViewController *tabbarVC = [[TabbarViewController alloc] init];
-    MainNavigationViewController *mainNAV = [[MainNavigationViewController alloc] initWithRootViewController:nil];
-    SaleListNavViewController *saleNAV = [[SaleListNavViewController alloc] initWithRootViewController:nil];
-    AcountNavigationViewController *accountNAV = [[AcountNavigationViewController alloc] initWithRootViewController:nil];
+    MainNavigationViewController *mainNAV = [[MainNavigationViewController alloc] initWithRootViewController:mainVC];
+    SaleListNavViewController *saleNAV = [[SaleListNavViewController alloc] initWithRootViewController:saleVC];
+    AcountNavigationViewController *accountNAV = [[AcountNavigationViewController alloc] initWithRootViewController:accountVC];
     [tabbarVC setViewControllers:@[mainNAV,saleNAV,accountNAV]];
     self.window.rootViewController = tabbarVC;
     [self.window makeKeyAndVisible];
+//    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:NO];
     return YES;
 }
 

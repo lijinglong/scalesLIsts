@@ -24,10 +24,7 @@
 - (void)customNavigationBar {
     
 }
-- (instancetype)initWithRootViewController:(UIViewController *)rootViewController {
-    AccountMainViewController *accountVC = [[AccountMainViewController alloc]initWithNibName:@"AccountMainViewController" bundle:nil];
-    return [super initWithRootViewController:accountVC];
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

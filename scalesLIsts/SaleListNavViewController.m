@@ -26,11 +26,7 @@
     
 }
 
-#pragma mark - 设置根视图
-- (instancetype)initWithRootViewController:(UIViewController *)rootViewController {
-    SaleListViewController *saleListVC = [[SaleListViewController alloc] initWithNibName:@"SaleListViewController" bundle:nil];
-    return [super initWithRootViewController:saleListVC];
-}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

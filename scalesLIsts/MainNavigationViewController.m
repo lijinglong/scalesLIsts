@@ -28,11 +28,6 @@
 
 }
 
-#pragma mark - 设置根视图
-- (instancetype)initWithRootViewController:(UIViewController *)rootViewController {
-    MainListViewController *mainVC = [[MainListViewController alloc] initWithNibName:@"MainListViewController" bundle: nil];
-    return [super initWithRootViewController:mainVC];
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
