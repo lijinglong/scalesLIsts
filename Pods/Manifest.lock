@@ -1,0 +1,13 @@
+PODS:
+  - MJRefresh (2.3.2)
+  - Toast (2.4)
+
+DEPENDENCIES:
+  - MJRefresh (~> 2.3.2)
+  - Toast (~> 2.4)
+
+SPEC CHECKSUMS:
+  MJRefresh: 0f6f5e8387970607c26080b44058b229a23065d7
+  Toast: 0773b8fc0e97352ca6054517bec7ebdd4110029d
+
+COCOAPODS: 0.38.2
